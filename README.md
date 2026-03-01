@@ -1,52 +1,98 @@
-# Welcome to your Expo app 👋
+📱 Expo Workout Tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile workout tracking app built with React Native (Expo) and SQLite.
 
-## Get started
+This project allows users to create workout sessions, add exercises, log sets, and track completed workouts through a history view.
 
-1. Install dependencies
+⸻
 
-   ```bash
-   npm install
-   ```
+🚀 Features
 
-2. Start the app
+Workout Sessions
+	•	Create a new workout session
+	•	Select focus muscle groups
+	•	Add exercises to a session
 
-   ```bash
-   npx expo start
-   ```
+Exercise Logging
+	•	Log sets with:
+	•	Reps
+	•	Weight (kg)
+	•	Automatic set numbering
+	•	Sets displayed inline on the session screen
 
-In the output, you'll find options to open the app in a
+Finish Workflow
+	•	Mark workout as finished
+	•	Persist completion timestamp
+	•	Automatically move completed workouts to History
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+History View
+	•	Displays completed workouts only
+	•	Ordered by most recent
+	•	Navigate back to session detail
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+⸻
 
-## Get a fresh project
+🛠 Tech Stack
+	•	Expo Router
+	•	React Native
+	•	TypeScript
+	•	expo-sqlite
+	•	Local SQLite database with lightweight migrations
 
-When you're ready, run:
+⸻
 
-```bash
-npm run reset-project
-```
+🧠 Database Design
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Core tables:
+	•	workout_session
+	•	session_exercise
+	•	exercise
+	•	set_entry
+	•	muscle_group
 
-## Learn more
+Design decisions:
+	•	Soft deletes using deletedAt
+	•	Automatic setNumber incrementing
+	•	Local-first data architecture
+	•	Inline session set loading via SQL JOIN queries
 
-To learn more about developing your project with Expo, look at the following resources:
+⸻
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+💻 Development Setup
 
-## Join the community
+Clone the repository:
 
-Join our community of developers creating universal apps.
+git clone https://github.com/Tpetreman99/Expo-Workout_tracker.git
+cd Expo-Workout_tracker
+npm install
+npx expo start
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# Expo-Workout-Tracker
-# Expo-Workout-Tracker
+⸻
+
+📈 Roadmap
+
+Planned improvements:
+	•	Unit toggle (kg ↔ lb)
+	•	Workout templates
+	•	Personal record tracking
+	•	Volume tracking
+	•	Session summary screen
+	•	Cloud sync
+	•	Authentication
+
+⸻
+
+🎯 Purpose
+
+This project was built to:
+	•	Practice React Native + Expo Router
+	•	Implement relational data modeling with SQLite
+	•	Build a scalable workout tracking architecture
+	•	Apply real-world state and data flow patterns
+
+⸻
+
+👤 Author
+
+Tanner Petreman
+GitHub: https://github.com/Tpetreman99
