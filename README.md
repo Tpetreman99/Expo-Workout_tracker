@@ -4,7 +4,7 @@ A mobile workout tracking app built with React Native (Expo) and SQLite.
 
 This project allows users to create workout sessions, add exercises, log sets, and track completed workouts through a history view.
 
-⸻
+*****************************************************************************************
 
 🚀 Features
 
@@ -30,7 +30,7 @@ History View
 	•	Ordered by most recent
 	•	Navigate back to session detail
 
-⸻
+*****************************************************************************************
 
 🛠 Tech Stack
 	•	Expo Router
@@ -39,7 +39,7 @@ History View
 	•	expo-sqlite
 	•	Local SQLite database with lightweight migrations
 
-⸻
+*****************************************************************************************
 
 🧠 Database Design
 
@@ -56,7 +56,7 @@ Design decisions:
 	•	Local-first data architecture
 	•	Inline session set loading via SQL JOIN queries
 
-⸻
+*****************************************************************************************
 
 💻 Development Setup
 
@@ -67,7 +67,7 @@ cd Expo-Workout_tracker
 npm install
 npx expo start
 
-⸻
+*****************************************************************************************
 
 📈 Roadmap
 
@@ -80,7 +80,7 @@ Planned improvements:
 	•	Cloud sync
 	•	Authentication
 
-⸻
+*****************************************************************************************
 
 🎯 Purpose
 
@@ -90,7 +90,7 @@ This project was built to:
 	•	Build a scalable workout tracking architecture
 	•	Apply real-world state and data flow patterns
 
-⸻
+*****************************************************************************************
 
 👤 Author
 
